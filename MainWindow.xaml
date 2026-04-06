@@ -1,0 +1,45 @@
+<Window x:Class="ClipAlert.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="ClipAlert Popup" Height="70" Width="260"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Topmost="True" ShowInTaskbar="False"
+        Loaded="Window_Loaded"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    
+    <Border x:Name="PopupBorder" CornerRadius="8" Background="{DynamicResource MaterialDesign.Brush.Background}"
+            Opacity="0" Margin="10">
+        <Border.RenderTransform>
+            <TranslateTransform x:Name="PopupTranslateTransform" />
+        </Border.RenderTransform>
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.4" />
+        </Border.Effect>
+        <Grid>
+            <StackPanel x:Name="CompactContentPanel" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                <materialDesign:PackIcon x:Name="CompactIcon" Kind="ClipboardCheckOutline" Width="22" Height="22" Foreground="{DynamicResource MaterialDesign.Brush.Primary}" Margin="0,0,10,0"/>
+                <TextBlock x:Name="CompactTitleText" Text="Copied to Clipboard" VerticalAlignment="Center" FontSize="15" FontWeight="Medium" Foreground="{DynamicResource MaterialDesign.Brush.Foreground}"/>
+            </StackPanel>
+
+            <Grid x:Name="FullCardContentPanel" Visibility="Collapsed" Margin="12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <materialDesign:PackIcon x:Name="FullCardIcon" Kind="ClipboardCheckOutline" Width="22" Height="22" Foreground="{DynamicResource MaterialDesign.Brush.Primary}" Margin="0,0,10,0"/>
+                    <TextBlock x:Name="FullCardTitleText" VerticalAlignment="Center" FontSize="15" FontWeight="SemiBold" Foreground="{DynamicResource MaterialDesign.Brush.Foreground}" />
+                </StackPanel>
+
+                <TextBlock x:Name="FullCardDetailText" Grid.Row="1" Margin="0,8,0,0" TextWrapping="Wrap" FontSize="13" Opacity="0.9" Foreground="{DynamicResource MaterialDesign.Brush.Foreground}" />
+            </Grid>
+
+            <!-- Drag Content -->
+            <StackPanel x:Name="DragContentPanel" Visibility="Collapsed" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+                <Button Content="Save Position" Style="{StaticResource MaterialDesignRaisedButton}" Click="SavePosition_Click" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

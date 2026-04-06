@@ -1,0 +1,76 @@
+<Window x:Class="ClipAlert.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    Title="ClipAlert Settings" Height="520" Width="350"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource MaterialDesign.Brush.Background}"
+        TextElement.Foreground="{DynamicResource MaterialDesign.Brush.Foreground}"
+        Loaded="Window_Loaded">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" CanContentScroll="True">
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Popup Location Settings" FontSize="20" FontWeight="Bold" Margin="0,0,0,20" />
+
+        <ComboBox x:Name="LocationTypeCombo" Grid.Row="1" materialDesign:HintAssist.Hint="Screen Location" 
+                  Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="0,0,0,15"
+                  SelectionChanged="LocationTypeCombo_SelectionChanged">
+            <ComboBoxItem Content="Bottom Right" Tag="BottomRight" />
+            <ComboBoxItem Content="Bottom Left" Tag="BottomLeft" />
+            <ComboBoxItem Content="Top Right" Tag="TopRight" />
+            <ComboBoxItem Content="Top Left" Tag="TopLeft" />
+            <ComboBoxItem Content="Custom Coordinates" Tag="Custom" />
+        </ComboBox>
+
+        <StackPanel x:Name="CustomCoordinatesPanel" Grid.Row="2" Orientation="Horizontal" Visibility="Collapsed" Margin="0,0,0,15">
+            <TextBox x:Name="CustomXBox" materialDesign:HintAssist.Hint="X Coordinate" Style="{StaticResource MaterialDesignOutlinedTextBox}" Width="100" Margin="0,0,20,0" />
+            <TextBox x:Name="CustomYBox" materialDesign:HintAssist.Hint="Y Coordinate" Style="{StaticResource MaterialDesignOutlinedTextBox}" Width="100" />
+        </StackPanel>
+
+        <Button x:Name="DragPositionBtn" Grid.Row="3" Content="Position by Dragging" Style="{StaticResource MaterialDesignOutlinedButton}" Margin="0,0,0,20" Click="DragPositionBtn_Click"/>
+
+        <ComboBox x:Name="NotificationStyleCombo" Grid.Row="4" materialDesign:HintAssist.Hint="Notification Style"
+                  Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="0,0,0,15">
+            <ComboBoxItem Content="Compact Banner" Tag="Compact" />
+            <ComboBoxItem Content="Full Card" Tag="FullCard" />
+        </ComboBox>
+
+        <ComboBox x:Name="AnimationModeCombo" Grid.Row="5" materialDesign:HintAssist.Hint="Animation Style"
+                  Style="{StaticResource MaterialDesignOutlinedComboBox}" Margin="0,0,0,15">
+            <ComboBoxItem Content="Smart (Slide + Fade)" Tag="Smart" />
+            <ComboBoxItem Content="Fade" Tag="Fade" />
+            <ComboBoxItem Content="Slide" Tag="Slide" />
+        </ComboBox>
+
+        <CheckBox x:Name="ShowDetailedInfoCheck" Grid.Row="6" Content="Show detailed clipboard content in popup" Margin="0,0,0,15"/>
+
+        <CheckBox x:Name="AutoStartCheck" Grid.Row="7" Content="Start Automatically with Windows" Margin="0,0,0,15" VerticalAlignment="Bottom"/>
+
+        <Button x:Name="SaveBtn" Grid.Row="8" Content="Save Settings" Style="{StaticResource MaterialDesignRaisedButton}" Margin="0,0,0,15" Click="SaveBtn_Click"/>
+
+            <StackPanel Grid.Row="9" HorizontalAlignment="Center" Margin="0,0,0,8">
+                <TextBlock Text="Made by Kalpit Jare" HorizontalAlignment="Center" Foreground="{DynamicResource MaterialDesign.Brush.Foreground}" Opacity="0.6" FontSize="12" />
+
+                <Button Click="GitHubLogo_Click" Background="Transparent" BorderThickness="0" Padding="0" Margin="0,8,0,4" Cursor="Hand" ToolTip="Open GitHub profile">
+                    <materialDesign:PackIcon Kind="Github" Width="26" Height="26" Foreground="{DynamicResource MaterialDesign.Brush.Foreground}" />
+                </Button>
+
+                <Button Click="GitHubUsername_Click" Background="Transparent" BorderThickness="0" Padding="0" Cursor="Hand" ToolTip="Open GitHub profile">
+                    <TextBlock Text="kalpit118" FontSize="12" TextDecorations="Underline" Foreground="{DynamicResource MaterialDesign.Brush.Primary}" />
+                </Button>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

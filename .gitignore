@@ -1,0 +1,16 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio / VS Code
+.vs/
+*.user
+*.suo
+
+# Runtime crash logs
+crash.txt
+crash_disp.txt
+
+# OS / misc
+Thumbs.db
+Desktop.ini
