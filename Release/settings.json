@@ -1,9 +1,9 @@
 {
   "Location": 4,
-  "CustomX": 544,
-  "CustomY": 37,
+  "CustomX": 546,
+  "CustomY": 56,
   "AutoStart": true,
   "ShowDetailedClipboardInfo": false,
   "Style": 0,
-  "Animation": 1
+  "Animation": 2
 }
