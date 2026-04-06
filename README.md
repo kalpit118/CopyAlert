@@ -3,7 +3,7 @@
 <br/>
 
 <!-- Logo / Banner -->
-<img src="https://img.shields.io/badge/ClipAlert-7C3AED?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xOCAyaDItMnpNNiAyaDJ2MkgzYTEgMSAwIDAgMC0xIDF2MTZhMSAxIDAgMCAwIDEgMWgxNmExIDEgMCAwIDAgMS0xdi01aC0ydjRINFY2aDJ2Mkg2VjJ6bTEwIDB2Mmg0VjZoMlY0YTIgMiAwIDAgMC0yLTJoLTR6TTggOGg4djJIOFY4em0wIDRoOHYySDh2LTJ6bTAgNGg1djJIOHYtMnoiLz48L3N2Zz4=&logoColor=white" alt="ClipAlert" height="40"/>
+<img src="ClipAlert_Logo.png" alt="ClipAlert" height="120"/>
 
 <h1>ClipAlert</h1>
 
