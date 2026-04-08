@@ -1,5 +1,5 @@
 Add-Type -AssemblyName System.Drawing
-$img = [System.Drawing.Bitmap]::FromFile("ClipAlert_Logo.png")
+$img = [System.Drawing.Bitmap]::FromFile("CopyAlert_Logo.png")
 $minX = $img.Width; $minY = $img.Height; $maxX = 0; $maxY = 0;
 for($y=0; $y -lt $img.Height; $y++) {
     for($x=0; $x -lt $img.Width; $x++) {
@@ -16,10 +16,10 @@ if ($minX -le $maxX -and $minY -le $maxY) {
     $rect = New-Object System.Drawing.Rectangle($minX, $minY, ($maxX-$minX+1), ($maxY-$minY+1))
     $cropped = $img.Clone($rect, $img.PixelFormat)
     $img.Dispose()
-    $cropped.Save("ClipAlert_Logo_cropped.png", [System.Drawing.Imaging.ImageFormat]::Png)
+    $cropped.Save("CopyAlert_Logo_cropped.png", [System.Drawing.Imaging.ImageFormat]::Png)
     $cropped.Dispose()
-    Remove-Item "ClipAlert_Logo.png" -Force
-    Rename-Item "ClipAlert_Logo_cropped.png" "ClipAlert_Logo.png"
+    Remove-Item "CopyAlert_Logo.png" -Force
+    Rename-Item "CopyAlert_Logo_cropped.png" "CopyAlert_Logo.png"
     Write-Host "Cropped successfully"
 } else {
     $img.Dispose()

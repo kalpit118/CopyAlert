@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Text.Json;
 
-namespace ClipAlert
+namespace CopyAlert
 {
     public enum LocationType
     {
