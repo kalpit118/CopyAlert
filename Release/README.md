@@ -55,18 +55,28 @@ Designed for developers and power users, CopyAlert stays out of your way in the 
 
 ### Installation
 
+<<<<<<< HEAD
 1. **Install**: Right-click **`Setup.ps1`** and select **Run with PowerShell**. This will:
    - Install CopyAlert to your local apps folder.
    - Create a Desktop shortcut.
    - Create a Start Menu shortcut.
 2. **Alternative**: You can also just run **`CopyAlert.exe`** directly if you prefer not to install it.
 3. **Configure**: Right-click the system tray icon and select **Settings** to customize appearance and behavior.
+=======
+1. **Download**: Grab the latest release from the [Releases](https://github.com/kalpit118/ClipAlert/releases) page.
+2. **Launch**: Run `CopyAlert.exe`.
+3. **Configure**: Right-click the system tray icon and select **Settings** to customize the appearance and behavior.
+>>>>>>> 884aef575463ac44f8d686edc5d74bcba80be308
 
 ### Build from Source
 
 ```powershell
 # Clone the repository
+<<<<<<< HEAD
 git clone https://github.com/kalpit118/CopyAlert.git
+=======
+git clone https://github.com/kalpit118/ClipAlert.git
+>>>>>>> 884aef575463ac44f8d686edc5d74bcba80be308
 cd CopyAlert
 
 # Build using Visual Studio or dotnet CLI
