@@ -3,7 +3,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Threading;
 
-namespace ClipAlert
+namespace CopyAlert
 {
     public partial class App : System.Windows.Application
     {

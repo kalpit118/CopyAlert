@@ -12,7 +12,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Threading;
 using MaterialDesignThemes.Wpf;
 
-namespace ClipAlert
+namespace CopyAlert
 {
     public partial class MainWindow : Window
     {
@@ -67,7 +67,7 @@ namespace ClipAlert
             
             try 
             {
-                System.Windows.Resources.StreamResourceInfo iconStream = System.Windows.Application.GetResourceStream(new Uri("pack://application:,,,/ClipAlert_Logo.png"));
+                System.Windows.Resources.StreamResourceInfo iconStream = System.Windows.Application.GetResourceStream(new Uri("pack://application:,,,/CopyAlert_Logo.png"));
                 if (iconStream != null)
                 {
                     _trayIcon = CreateCrispTrayIcon(iconStream.Stream);
@@ -84,7 +84,7 @@ namespace ClipAlert
             }
 
             _notifyIcon.Visible = true;
-            _notifyIcon.Text = "ClipAlert is running";
+            _notifyIcon.Text = "CopyAlert is running";
 
             ContextMenuStrip menu = new ContextMenuStrip();
             

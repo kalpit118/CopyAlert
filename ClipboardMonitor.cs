@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
 
-namespace ClipAlert
+namespace CopyAlert
 {
     public class ClipboardMonitor : IDisposable
     {

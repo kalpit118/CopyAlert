@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using Microsoft.Win32;
 
-namespace ClipAlert
+namespace CopyAlert
 {
     public partial class SettingsWindow : Window
     {
@@ -152,7 +152,7 @@ namespace ClipAlert
                 using RegistryKey? key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
                 if (key != null)
                 {
-                    string appName = "ClipAlert";
+                    string appName = "CopyAlert";
                     if (enable)
                     {
                         string? path = Environment.ProcessPath;

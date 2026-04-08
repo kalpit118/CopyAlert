@@ -3,9 +3,9 @@
 <br/>
 
 <!-- Logo / Banner -->
-<img src="ClipAlert_Logo.png" alt="ClipAlert" height="120"/>
+<img src="CopyAlert_Logo.png" alt="CopyAlert" height="120"/>
 
-<h1>ClipAlert</h1>
+<h1>CopyAlert</h1>
 
 <p><strong>Lightweight Material UI copy notifications · Built for fun and to avoid pressing CTRL + C multiple times</strong></p>
 
@@ -25,11 +25,11 @@
 
 ## ✦ Overview
 
-**ClipAlert** is a lightweight, modern clipboard monitoring utility for Windows. Built for fun and productivity, it provides beautiful Material UI-styled notifications whenever you perform a **Copy** action. 
+**CopyAlert** is a lightweight, modern clipboard monitoring utility for Windows. Built for fun and productivity, it provides beautiful Material UI-styled notifications whenever you perform a **Copy** action. 
 
-Ever found yourself pressing `CTRL + C` three times just to be sure? ClipAlert gives you the visual confirmation you need so you can copy once and move on.
+Ever found yourself pressing `CTRL + C` three times just to be sure? CopyAlert gives you the visual confirmation you need so you can copy once and move on.
 
-Designed for developers and power users, ClipAlert stays out of your way in the system tray while providing real-time feedback for your copy interactions.
+Designed for developers and power users, CopyAlert stays out of your way in the system tray while providing real-time feedback for your copy interactions.
 
 ---
 
@@ -56,7 +56,7 @@ Designed for developers and power users, ClipAlert stays out of your way in the 
 ### Installation
 
 1. **Download**: Grab the latest release from the [Releases](https://github.com/kalpit118/ClipAlert/releases) page.
-2. **Launch**: Run `ClipAlert.exe`.
+2. **Launch**: Run `CopyAlert.exe`.
 3. **Configure**: Right-click the system tray icon and select **Settings** to customize the appearance and behavior.
 
 ### Build from Source
@@ -64,7 +64,7 @@ Designed for developers and power users, ClipAlert stays out of your way in the 
 ```powershell
 # Clone the repository
 git clone https://github.com/kalpit118/ClipAlert.git
-cd ClipAlert
+cd CopyAlert
 
 # Build using Visual Studio or dotnet CLI
 dotnet build --configuration Release
@@ -74,12 +74,12 @@ dotnet build --configuration Release
 
 ## ✦ Settings Guide
 
-ClipAlert is highly customizable through its dedicated settings panel:
+CopyAlert is highly customizable through its dedicated settings panel:
 
 - **Location**: Choose from **Bottom Right**, **Bottom Left**, **Top Right**, **Top Left**, or **Custom** (draggable).
 - **Style**: Toggle between **Compact** for minimal distraction or **Full Card** for detailed info.
 - **Animations**: Select between **Fade**, **Slide**, or **Smart** transition modes.
-- **Auto-Start**: Keep ClipAlert active every time you boot your PC.
+- **Auto-Start**: Keep CopyAlert active every time you boot your PC.
 - **Visual Confirmation**: Never wonder "did it copy?" again.
 
 ---
@@ -90,7 +90,7 @@ ClipAlert is highly customizable through its dedicated settings panel:
 System Clipboard Event
          │
          ▼
-  ClipAlert Monitor
+  CopyAlert Monitor
          │
     ┌────┴────┐
     │ Action? │
@@ -106,8 +106,8 @@ System Clipboard Event
 ## ✦ Project Structure
 
 ```
-ClipAlert/
-├── ClipAlert.csproj      # Project configuration
+CopyAlert/
+├── CopyAlert.csproj      # Project configuration
 ├── App.xaml              # Application entry point
 ├── MainWindow.xaml       # Main Notification UI
 ├── SettingsWindow.xaml   # Configuration UI
@@ -158,6 +158,6 @@ Made with ♥ by [**Kalpit Jare**](https://github.com/kalpit118)
 
 <br/>
 
-*If ClipAlert improved your workflow, give it a ⭐*
+*If CopyAlert improved your workflow, give it a ⭐*
 
 </div>
