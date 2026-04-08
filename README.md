@@ -3,11 +3,7 @@
 <br/>
 
 <!-- Logo / Banner -->
-<<<<<<< HEAD
 <img src="Logo_Git.png" alt="CopyAlert" height="120"/>
-=======
-<img src="Logo.png" alt="CopyAlert" height="120"/>
->>>>>>> 884aef575463ac44f8d686edc5d74bcba80be308
 
 <h1>CopyAlert</h1>
 
