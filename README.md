@@ -15,7 +15,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/kalpit118/CopyAlert?color=9333EA&style=flat-square&logo=github)](https://github.com/kalpit118/CopyAlert/network)
 [![GitHub issues](https://img.shields.io/github/issues/kalpit118/CopyAlert?color=A855F7&style=flat-square)](https://github.com/kalpit118/CopyAlert/issues)
 [![License](https://img.shields.io/badge/license-GPL--3.0-7C3AED?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-7C3AED.svg?style=flat-square)](https://github.com/kalpit118/CopyAlert/pulls)
+![Page Views](https://komarev.com/ghpvc/?username=kalpit118&repo=CopyAlert&color=7C3AED&style=flat-square&label=PAGE%20VIEWS)
 
 <br/>
 
